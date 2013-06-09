@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+/**
+* Inchoo
+*
+* NOTICE OF LICENSE
+*
+* This source file is subject to the Open Software License (OSL 3.0)
+* that is bundled with this package in the file LICENSE.txt.
+* It is also available through the world-wide-web at this URL:
+* http://opensource.org/licenses/osl-3.0.php
+* If you did not receive a copy of the license and are unable to
+* obtain it through the world-wide-web, please send an email
+* to license@magentocommerce.com so we can send you a copy immediately.
+*
+* DISCLAIMER
+*
+* Please do not edit or add to this file if you wish to upgrade
+* Magento or this extension to newer versions in the future.
+** Inchoo *give their best to conform to
+* "non-obtrusive, best Magento practices" style of coding.
+* However,* Inchoo *guarantee functional accuracy of
+* specific extension behavior. Additionally we take no responsibility
+* for any possible issue(s) resulting from extension usage.
+* We reserve the full right not to provide any kind of support for our free extensions.
+* Thank you for your understanding.
+*
+* @category Inchoo
+* @package CustomLinkedProducts
+* @author Marko Martinović <marko.martinovic@inchoo.net>
+* @copyright Copyright (c) Inchoo (http://inchoo.net/)
+* @license http://opensource.org/licenses/osl-3.0.php Open Software License (OSL 3.0)
+*/
+-->
+
+<layout>
+    <adminhtml_catalog_product_custom>
+        <block type="core/text_list" name="root" output="toHtml">
+            <block type="inchoo_customlinkedproducts/adminhtml_catalog_product_edit_tab_custom" name="catalog.product.edit.tab.custom"/>
+            <block type="adminhtml/widget_grid_serializer" name="custom_grid_serializer">
+                <reference name="custom_grid_serializer">
+                    <action method="initSerializerBlock">
+                        <grid_block_name>catalog.product.edit.tab.custom</grid_block_name>
+                        <data_callback>getSelectedCustomProducts</data_callback>
+                        <hidden_input_name>links[custom]</hidden_input_name>
+                        <reload_param_name>products_custom</reload_param_name>
+                    </action>
+                    <action method="addColumnInputName">
+                        <input_name>position</input_name>
+                    </action>
+                </reference>
+            </block>
+        </block>
+    </adminhtml_catalog_product_custom>
+
+    <adminhtml_catalog_product_customgrid>
+        <block type="core/text_list" name="root" output="toHtml">
+            <block type="inchoo_customlinkedproducts/adminhtml_catalog_product_edit_tab_custom" name="catalog.product.edit.tab.custom"/>
+        </block>
+    </adminhtml_catalog_product_customgrid>
+      
+</layout>

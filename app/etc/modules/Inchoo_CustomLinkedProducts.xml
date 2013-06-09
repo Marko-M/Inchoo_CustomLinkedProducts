@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<config>
+    <modules>
+        <Inchoo_CustomLinkedProducts>
+            <active>true</active>
+            <codePool>community</codePool>
+        </Inchoo_CustomLinkedProducts>
+    </modules>
+</config>
