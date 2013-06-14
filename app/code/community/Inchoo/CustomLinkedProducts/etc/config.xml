@@ -44,11 +44,6 @@
             <inchoo_customlinkedproducts>
                 <class>Inchoo_CustomLinkedProducts_Block</class>
             </inchoo_customlinkedproducts>
-            <adminhtml>
-                <rewrite>
-                     <catalog_product_edit_tabs>Inchoo_CustomLinkedProducts_Block_Adminhtml_Catalog_Product_Edit_Tabs</catalog_product_edit_tabs>
-                 </rewrite>
-            </adminhtml>
         </blocks>
         <helpers>
             <inchoo_customlinkedproducts>

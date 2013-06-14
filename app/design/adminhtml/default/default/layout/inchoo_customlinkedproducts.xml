@@ -34,6 +34,16 @@
 -->
 
 <layout>
+    
+    <adminhtml_catalog_product_edit>
+        <reference name="product_tabs">
+            <action method="addTab">
+                <name>custom</name>
+                <block>inchoo_customlinkedproducts/adminhtml_catalog_product_edit_tab</block>
+            </action>
+        </reference>
+    </adminhtml_catalog_product_edit>
+    
     <adminhtml_catalog_product_custom>
         <block type="core/text_list" name="root" output="toHtml">
             <block type="inchoo_customlinkedproducts/adminhtml_catalog_product_edit_tab_custom" name="catalog.product.edit.tab.custom"/>
