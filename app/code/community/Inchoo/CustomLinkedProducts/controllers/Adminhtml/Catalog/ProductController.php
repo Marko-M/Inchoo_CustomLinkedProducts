@@ -55,7 +55,7 @@ class Inchoo_CustomLinkedProducts_Adminhtml_Catalog_ProductController extends Ma
         $this->_initProduct();
         $this->loadLayout();
         $this->getLayout()->getBlock('catalog.product.edit.tab.custom')
-            ->setProductsRelated($this->getRequest()->getPost('products_custom', null));
+            ->setProductsCustom($this->getRequest()->getPost('products_custom', null));
         $this->renderLayout();
     }
 

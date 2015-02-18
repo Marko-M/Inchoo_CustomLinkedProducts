@@ -34,15 +34,22 @@
 -->
 
 <layout>
-    
-    <adminhtml_catalog_product_edit>
+    <inchoo_customlinkedproducts_inject_tab>
         <reference name="product_tabs">
             <action method="addTab">
                 <name>custom</name>
                 <block>inchoo_customlinkedproducts/adminhtml_catalog_product_edit_tab</block>
             </action>
         </reference>
+    </inchoo_customlinkedproducts_inject_tab>
+
+    <adminhtml_catalog_product_edit>
+        <update handle="inchoo_customlinkedproducts_inject_tab"/>
     </adminhtml_catalog_product_edit>
+
+    <adminhtml_catalog_product_new>
+        <update handle="inchoo_customlinkedproducts_inject_tab" />
+    </adminhtml_catalog_product_new>
     
     <adminhtml_catalog_product_custom>
         <block type="core/text_list" name="root" output="toHtml">

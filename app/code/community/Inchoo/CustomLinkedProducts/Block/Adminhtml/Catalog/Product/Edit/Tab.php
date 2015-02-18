@@ -37,7 +37,9 @@ implements Mage_Adminhtml_Block_Widget_Tab_Interface
 {
     public function canShowTab() 
     {
-        return true;
+        return (($this->getRequest()->getActionName() === 'new') && (!$this->getRequest()->getParam('set')))
+            ? false
+            : true;
     }
 
     public function getTabLabel() 
