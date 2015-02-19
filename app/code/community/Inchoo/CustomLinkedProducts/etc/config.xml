@@ -116,5 +116,14 @@
                 </observers>
             </catalog_model_product_duplicate>
         </events>
+        <translate>
+            <modules>
+                <Inchoo_CustomLinkedProducts>
+                    <files>
+                        <default>Inchoo_CustomLinkedProducts.csv</default>
+                    </files>
+                </Inchoo_CustomLinkedProducts>
+            </modules>
+        </translate>
     </adminhtml>
 </config>
