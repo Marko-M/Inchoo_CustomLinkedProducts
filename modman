@@ -1,0 +1,5 @@
+app/code/community/Inchoo/CustomLinkedProducts  app/code/community/Inchoo/CustomLinkedProducts
+app/design/adminhtml/default/default/layout/inchoo_customlinkedproducts.xml app/design/adminhtml/default/default/layout/inchoo_customlinkedproducts.xml
+app/design/frontend/base/default/layout/inchoo_customlinkedproducts.xml app/design/frontend/base/default/layout/inchoo_customlinkedproducts.xml
+app/design/frontend/base/default/template/inchoo/catalog/product/list/custom.phtml  app/design/frontend/base/default/template/inchoo/catalog/product/list/custom.phtml
+app/etc/modules/Inchoo_CustomLinkedProducts.xml app/etc/modules/Inchoo_CustomLinkedProducts.xml
