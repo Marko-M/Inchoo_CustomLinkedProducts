@@ -53,8 +53,9 @@ class Inchoo_CustomLinkedProducts_Block_Catalog_Product_List_Custom extends Mage
             );
             $this->_addProductAttributesAndPrices($this->_itemCollection);
         }
-        
-        Mage::getSingleton('catalog/product_visibility')->addVisibleInCatalogFilterToCollection($this->_itemCollection);
+
+        $this->_itemCollection->setVisibility(Mage::getSingleton('catalog/product_visibility')->getVisibleInCatalogIds());
+        $this->_itemCollection->addAttributeToFilter('status', array('in' => Mage::getSingleton('catalog/product_status')->getVisibleStatusIds()));        
 
         $this->_itemCollection->load();
 

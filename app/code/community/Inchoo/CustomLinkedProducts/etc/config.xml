@@ -89,6 +89,15 @@
                 </inchoo_customlinkedproducts>
             </updates>
         </layout>
+        <translate>
+            <modules>
+                <inchoo_customlinkedproducts>
+                    <files>
+                        <default>Inchoo_CustomLinkedProducts.csv</default>
+                    </files>
+                </inchoo_customlinkedproducts>
+            </modules>
+        </translate>        
     </frontend>
     <adminhtml>
         <layout>
@@ -116,5 +125,14 @@
                 </observers>
             </catalog_model_product_duplicate>
         </events>
+        <translate>
+            <modules>
+                <inchoo_customlinkedproducts>
+                    <files>
+                        <default>Inchoo_CustomLinkedProducts.csv</default>
+                    </files>
+                </inchoo_customlinkedproducts>
+            </modules>
+        </translate>
     </adminhtml>
 </config>
